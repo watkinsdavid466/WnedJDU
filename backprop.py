@@ -8,7 +8,6 @@ def full_backward_propagation(Y_hat, Y, memory, params_values, nn_architecture):
     
     for layer_idx_prev, layer in reversed(list(enumerate(nn_architecture))):
         layer_idx_curr = layer_idx_prev + 1
-        activ_function_curr = layer["activation"]
         
         dA_curr = dA_prev
         
